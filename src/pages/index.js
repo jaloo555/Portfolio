@@ -1,16 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
+import Home from "../components/sections/home"
+import About from "../components/sections/about"
+
 import "../styles/index.css"
 
 const IndexPage = () => (
-  <div>
-    <Layout>
-      <h1>Hey, I'm Jason</h1>
-      <p>I'm Jason, a student at USC.</p>
-      <p>Time to go build something great.</p>
-      <p>Need a developer? <a href="mailto:chisanch@usc.edu">Contact me.</a></p>
-    </Layout>
-  </div>
+  <Layout>
+    <Home/>
+    <About/>
+  </Layout>
 )
 
 export default IndexPage

@@ -1,13 +1,24 @@
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .logo {
-  margin: 0;
-  font-size: 1.45em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000000;
 }
 
 .main-nav {
-  list-style: none;
+  display: flex;
+  list-style-type: none;
+}
+
+.main-nav li {
+  text-decoration: none;
+  color: grey;
+  font-size: 0.85em;
+  padding: 0.45rem;
 }
