@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  list-style: none;
+}
