@@ -1,15 +1,17 @@
 import React from 'react'
 
 import Header from './header'
+import Head from './head'
 import Footer from './footer'
-import containerStyles from "./container.module.css"
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
+import Container from 'react-bootstrap/Container'
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
-    graphql `
+    graphql`
       query SiteTitleQuery{
         site {
           siteMetadata {
@@ -21,7 +23,7 @@ const Layout = ({ children }) => {
     `
   )
   return (
-    <div className={containerStyles.container}>
+    <Container fluid={true} >
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
@@ -31,12 +33,14 @@ const Layout = ({ children }) => {
           }
         ]}
       />
-      <div className={containerStyles.content}>
-        <Header/>
+
+      <Head/>
+      <Header/>
+      <Container fluid={true} className="content">
         {children}
-      </div>
+      </Container>
       <Footer/>
-    </div>
+    </Container>
   )
 }
 

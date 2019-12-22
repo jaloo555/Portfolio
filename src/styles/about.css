@@ -2,3 +2,8 @@
   height: 70vh;
   margin-top: 10rem;
 }
+
+p {
+  margin-top: 4rem;
+  line-height: 1.5em;
+}

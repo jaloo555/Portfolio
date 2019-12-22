@@ -1,28 +1,69 @@
-nav {
+:root {
+  --mainColor: #ff9800;
+  --lightColor: #FFB74D;
+  --darkerColor: #E68900;
+}
+
+.nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background-color: white;
 }
 
-.logo {
-  font-size: 1em;
-  font-weight: 100;
-  padding: 5px;
+.navbar-brand > .logo  {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 0.25em;
   text-decoration: none;
   color: #ffffff;
   background-color: #000000;
 }
 
-.main-nav {
-  display: flex;
-  list-style-type: none;
+.navbar-brand > .logo:hover {
+  color: var(--lightColor);
 }
 
-.main-nav li {
+.navbar-collapse .navbar-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 3px;
+}
+
+
+.underline {
+  padding-bottom: 3.5px;
+  background: linear-gradient(to bottom, var(--mainColor) 0%,
+    var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
   text-decoration: none;
-  color: grey;
-  font-size: 0.85em;
-  font-weight: 100;
-  padding: 0.45rem;
+  transition-duration: 1.2s;
+}
+
+.underline:hover {
+  background-size: auto;
+}
+
+.nav-links > a:hover {
+  color: var(--mainColor);
+}
+
+.active {
+  visibility: visible;
+  transition: all 300ms ease-in;
+}
+
+.hidden {
+  visibility: hidden;
+  transition: all 300ms ease-out;
+  transform: translate(0, -100%);
 }
