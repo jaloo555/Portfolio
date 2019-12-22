@@ -5,9 +5,16 @@ import "../../styles/about.css"
 const About = () => {
   return (
     <div className="about-main">
-      <h1>About me</h1>
-      <p>I'm Jason, a student at USC.</p>
-      <p>Time to go build something great.</p>
+      <h1>About me</h1> <hr/>
+      <p>
+        Hi! I'm Jason, a Computer Science major at the University of Southern California. 
+        I enjoy playing with data, developing websites and tweaking machine learning models.
+      </p>
+      <p>
+        As a software engineer, I've interned at Xunlei and Uliza where I got to work on a variety of interesting problems.
+        In my spare time, I enjoy building proof-of-concepts to validate cool ideas.
+        When I'm not coding, you can usually find me at the gym or driving around in LA. 
+      </p>
     </div>
   )
 }
