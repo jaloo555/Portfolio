@@ -18,14 +18,14 @@ const Home = () => {
       <h1>
         <span className="name">Jason Chen</span>.
       </h1>
-      <h1 className="sub-desc">I build software.</h1>
+      <h1 className="sub-desc underline">I build software.</h1>
       <p className="description">
         I'm a software engineer in Los Angeles that builds web applications and
         experiments with data science.
       </p>
 
-      <p className="contact01">
-        <hr />
+      <div className="contact01">
+        <div className="divider"></div>
         <a className="social" href="https://github.com/jaloo555">
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -41,7 +41,7 @@ const Home = () => {
         <a className="social">
           <FontAwesomeIcon icon={faFirstdraft} />
         </a>
-      </p>
+      </div>
     </Container>
   )
 }

@@ -1,9 +1,41 @@
 .about-main {
-  height: 70vh;
+  height: 80vh;
   margin-top: 10rem;
 }
 
 p {
-  margin-top: 4rem;
   line-height: 1.5em;
+}
+
+.about-desc {
+  margin-top: 2.5rem;
+}
+
+.heading {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.line {
+  width: fit-content;
+  background-color: black;
+  height: 10npx;
+}
+
+.divider {
+  height: 1px;
+  background-color: #000000;
+  flex-grow: 0.1;
+  margin-right: 1em;
+}
+
+.highlight {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.highlight:hover {
+  text-decoration: none;
+  color: var(--darkerColor);
 }

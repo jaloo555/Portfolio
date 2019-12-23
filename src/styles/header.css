@@ -13,7 +13,7 @@
   z-index: 1;
   width: 100%;
   top: 0;
-  background-color: white;
+  background-color: #fffcf4;
 }
 
 .navbar-brand > .logo  {
@@ -36,7 +36,6 @@
   margin-right: 3px;
 }
 
-
 .underline {
   padding-bottom: 3.5px;
   background: linear-gradient(to bottom, var(--mainColor) 0%,
@@ -46,7 +45,11 @@
   background-size: 4px 4px;
   color: #000;
   text-decoration: none;
-  transition-duration: 1.2s;
+  -webkit-transition: background-size 1500ms ease-in;
+  -moz-transition: background-size 1500 ease-in;
+  -o-transition: background-size 1500 ease-in;
+  -ms-transition: background-size 1500ms ease-in;
+  transition: background-size 1500ms ease-in;
 }
 
 .underline:hover {

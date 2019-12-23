@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     `
   )
   return (
-    <Container fluid={true} >
+    <Container fluid={true} className="lgContainer" >
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
