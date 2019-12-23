@@ -23,6 +23,7 @@
   text-decoration: none;
   color: #ffffff;
   background-color: #000000;
+  margin-top: 0.5em;
 }
 
 .navbar-brand > .logo:hover {

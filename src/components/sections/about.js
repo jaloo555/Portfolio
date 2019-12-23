@@ -5,10 +5,10 @@ import { Container } from 'react-bootstrap'
 
 const About = () => {
   return (
-    <Container id="about" className="about-main">
+    <Container fluid={true} id="about" className="about-main">
       <div className="heading">
         <h4>About me</h4>
-        <div classname= "divider"></div>
+        <div className= "divider"></div>
       </div>
       <div className="about-desc">
         <p>

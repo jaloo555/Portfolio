@@ -1,6 +1,7 @@
 .about-main {
   height: 80vh;
   margin-top: 10rem;
+  max-width: 90%;
 }
 
 p {
@@ -12,21 +13,17 @@ p {
 }
 
 .heading {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.line {
-  width: fit-content;
-  background-color: black;
-  height: 10npx;
-}
-
-.divider {
+.heading > .divider {
   height: 1px;
-  background-color: #000000;
-  flex-grow: 0.1;
-  margin-right: 1em;
+  background-color: #d8d3d3;
+  flex-grow: 0.9;
+  color: white;
+  margin-left: 1em;
 }
 
 .highlight {

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Head = () => {
   return (
-    <head>
+    <div>
       {/* Importing react-bootstrap */}
       <link
         rel="stylesheet"
@@ -21,7 +21,7 @@ const Head = () => {
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossorigin
       />
-    </head>
+    </div>
   )
 }
 

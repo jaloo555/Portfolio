@@ -1,0 +1,17 @@
+.contact-footer {
+  display: flex;
+  line-height: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-footer > .contact02 > a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.contact-footer > p {
+  font-size: 0.8em;
+}
