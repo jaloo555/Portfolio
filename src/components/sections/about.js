@@ -1,7 +1,10 @@
 import React from 'react'
 
 import "../../styles/about.css"
-import { Container } from 'react-bootstrap'
+import headshot from "../../images/Headshot.png"
+import { Container, Row, Col } from 'react-bootstrap'
+
+console.log(headshot)
 
 const About = () => {
   return (
@@ -23,6 +26,7 @@ const About = () => {
           When I'm not coding, you can usually find me at the gym or helping out <a className="highlight" href="https://www.trojansupport.org/">Trojan Support</a>. 
         </p>
       </div>
+
       
     </Container>
   )

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  bottom: 0;
 }
 
 .contact-footer > .contact02 > a {

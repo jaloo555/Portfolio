@@ -1,5 +1,5 @@
 .home-main {
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin-top: 8rem;
@@ -19,6 +19,7 @@ p {
 .sub-desc {
   color: grey;
   font-weight: 400;
+  font-size: 2.5em;
 }
 
 .underline {
@@ -47,24 +48,40 @@ p {
   width: 65%;
   
 }
+
+.name {
+  font-weight: 500;
+  font-size: 1.45em;
+}
+
 @media only screen and (max-width: 600px) {
   .description {
     width: 75%;
   }
   .home-main {
     max-width: 100%;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 1em;
+  }
+
+  .sub-desc {
+    font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
   .description {
     width: 45%;
   }
-}
-
-.name {
-  font-weight: 500;
-  font-size: 1.2em;
+  p {
+    font-size: 1.25vw;
+  }
+  .name {
+    font-size: 4vw;
+  }
 }
 
 .mail-link {
