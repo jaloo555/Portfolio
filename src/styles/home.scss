@@ -1,3 +1,5 @@
+@import "./globals";
+
 .home-main {
   height: 100vh;
   display: flex;
@@ -6,6 +8,9 @@
   padding: 2em;
   max-width: 90%;
   line-height: 2.5rem;
+  @include tablet {
+    align-items: center;
+  }
 }
 
 h1,h2,h3,p {
@@ -54,21 +59,27 @@ p {
   font-size: 1.45em;
 }
 
-@media only screen and (max-width: 600px) {
+@include tablet {
   .description {
     width: 75%;
   }
   .home-main {
     max-width: 100%;
+    display: flex;
     align-items: center;
-  }
-
-  .name {
-    font-size: 1em;
-  }
-
-  .sub-desc {
-    font-size: 2em;
+    .name {
+      font-size: 0.9em;
+      display: flex;
+      align-self: center;
+    }
+    .sub-desc {
+      font-size: 1.75em;
+      display: flex;
+      align-self: center;
+    }
+    .description {
+      text-align: center;
+    }
   }
 }
 

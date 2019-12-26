@@ -1,36 +1,38 @@
 import React from 'react'
 
 import "../../styles/skills.scss"
-import { Container, Row, Col } from 'react-bootstrap'
 
 const Skills = () => {
   const languages = ["C++", "Java", "Python", "Javascript (ES6)", "SQL"]
-  const frameworks = ["Pandas", "Numpy", "Keras", "Tensorflow", "React", "Node", "Java Servlets"]
-  const tools = ["Bash", "Git & Github", "MySQL", "GCP", "AWS"]
+  const frameworks = ["Keras", "Tensorflow", "React", "NodeJS", "Java Servlets"]
+  const tools = ["Bash", "Git & Github", "MySQL", "Google Cloud Platform", "AWS"]
   return (
-    <Container fluid={true} id="skills" className="skills-main">
-      <div className="skills-chunk">
-        <div classname="skills-category" lg={3}>
-          <ul className="skills-list">
-            <li className="title">Languages</li>
-            {languages.map((i) => <li className="skills-category-item">{i}</li>)}
-          </ul>
-        </div>
-        <div classname="skills-category" lg={3}>
-          <ul className="skills-list">
-            <li className="title">Frameworks</li>
-            {frameworks.map((i) => <li className="skills-category-item">{i}</li>)}
-          </ul>
-        </div>
-        <div classname="skills-category" lg={3}>
-          <ul className="skills-list">
-            <li className="title">Tools</li>
-            {tools.map((i) => <li className="skills-category-item">{i}</li>)}
-          </ul>
+    <section id="skills" className="skills-main skills section">
+      <div className="section-title">Skills</div>
+      <div className="section-content">
+        <div className="skills-chunk">
+          <div className="skills-category" lg={3}>
+            <div className="skills-category-label">Languages</div>
+            <ul>
+              {languages.map((row,i) => <li className="skills-category-item" key={i}>{row}</li>)}
+            </ul>
+          </div>
+          <div className="skills-category" lg={3}>
+            <div className="skills-category-label">Frameworks</div>
+            <ul>
+              {frameworks.map((row, i) => <li className="skills-category-item" key={i}>{row}</li>)}
+            </ul>
+          </div>
+          <div className="skills-category" lg={3}>
+            <div className="skills-category-label">Tools</div>
+            <ul>
+              {tools.map((row,i) => <li className="skills-category-item" key={i}>{row}</li>)}
+            </ul>
+          </div>
         </div>
       </div>
       
-    </Container>
+    </section>
   )
 }
 

@@ -1,0 +1,20 @@
+@import './globals';
+
+.about-section {
+  // // margin-top: 8em;
+  @include weird-height{
+    margin-top: 15em;
+  }
+  // height: 30vh;
+} 
+
+.highlight {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.highlight:hover {
+  text-decoration: none;
+  color: var(--darkerColor);
+}

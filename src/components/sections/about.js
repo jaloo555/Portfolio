@@ -1,19 +1,17 @@
 import React from 'react'
 
-import "../../styles/about.css"
+import "../../styles/about.scss"
 import headshot from "../../images/Headshot.png"
-import { Container, Row, Col } from 'react-bootstrap'
 
 console.log(headshot)
 
 const About = () => {
   return (
-    <Container fluid={true} id="about" className="about-main">
-      <div className="heading">
-        <h4>About me</h4>
-        <div className= "divider"></div>
+    <section id="about" className="section about-section">
+      <div className="section-title">
+        About Me
       </div>
-      <div className="about-desc">
+      <div className="section-content">
         <p>
           I am a Computer Science major at the <span>University of Southern California</span>. 
           I enjoy developing websites and tweaking machine learning models.
@@ -26,9 +24,7 @@ const About = () => {
           When I'm not coding, you can usually find me at the gym or helping out <a className="highlight" href="https://www.trojansupport.org/">Trojan Support</a>. 
         </p>
       </div>
-
-      
-    </Container>
+    </section>
   )
 }
 

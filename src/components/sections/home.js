@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import "../../styles/home.css"
+import "../../styles/home.scss"
 import Container from "react-bootstrap/Container"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faFirstdraft, faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -25,7 +25,7 @@ class Home extends React.Component {
           My name is
         </p>
         <h1>
-          <span className="name">Jason Chen</span>.
+          <span className="name">Jason Chen.</span>
         </h1>
         <h1 className="sub-desc underline">I build software.</h1>
         <p className="description">

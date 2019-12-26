@@ -1,28 +1,28 @@
-$font-stack: sans-serif;
-$font-weight: 300;
+@import './globals';
 
 .skills-main {
   margin-top: 10em;
 }
 
 .skills-chunk {
-  line-height: 1.6em;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  .skills-list {
-    list-style-type: none;
-    font-family: $font-stack;
-    font-weight: $font-weight;
-    .title {
-      font-size: larger;
-      margin-bottom: 1em;
-      font-weight: 700;
-      text-transform: uppercase;
+  @include weird-medium {
+    flex-wrap: wrap;
+  }
+  .skills-category {
+    @include weird-medium {
+      width: 40%;
+      margin-right: 2vw;
+      margin-bottom: 25px;
     }
-    .skills-category-item {
-      margin: 3px 0;
-      font-size: 0.95rem;
+    &-label {
+      font-weight: 400;
+      font-size: large;
+      margin-bottom: 0.25em;
+    }
+    &-item {
+      columns: #373535;
     }
   }
 }
-

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import "../styles/header.css"
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 
 class Header extends React.Component {
   constructor(props) {
@@ -33,7 +33,7 @@ class Header extends React.Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-links ml-auto">
             <Nav.Link href="#about" className="links">About</Nav.Link>
-            <Nav.Link href="#work" className="links">Work</Nav.Link>
+            <Nav.Link href="#skills" className="links">Skills</Nav.Link>
             <Nav.Link href="#projects" className="links">Projects</Nav.Link>
             <Nav.Link href="#contact" className="links">Contact</Nav.Link>
             <Nav.Link href="#resume" className="underline">Resume</Nav.Link>
