@@ -1,11 +1,11 @@
 @import './globals';
 
 .about-section {
-  // // margin-top: 8em;
+  margin-top: 30vh;
   @include weird-height{
     margin-top: 15em;
   }
-  // height: 30vh;
+  font-family: $Apercu;
 } 
 
 .highlight {

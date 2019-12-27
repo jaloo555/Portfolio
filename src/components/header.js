@@ -1,13 +1,13 @@
 import React from 'react'
 
-import "../styles/header.css"
+import "../styles/header.scss"
 import { Navbar, Nav } from 'react-bootstrap'
 
 class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false,
+      show: true,
       scrollPos: 0
     }
     this.handleScroll = this.handleScroll.bind(this)

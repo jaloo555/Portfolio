@@ -2,6 +2,7 @@
 
 .skills-main {
   margin-top: 10em;
+  font-family: $Apercu;
 }
 
 .skills-chunk {
@@ -17,12 +18,14 @@
       margin-bottom: 25px;
     }
     &-label {
-      font-weight: 400;
-      font-size: large;
+      font-weight: 500;
+      font-size: larger;
       margin-bottom: 0.25em;
     }
     &-item {
       columns: #373535;
+      line-height: 1.5em;
+      font-size: large;
     }
   }
 }

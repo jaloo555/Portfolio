@@ -1,9 +1,18 @@
 import React from 'react'
+import {Card} from 'react-bootstrap'
 
 import "../../styles/projects.scss"
 
-const Card = () => {
-  
+const ProjectCard = (props) => {
+  return(
+    <Card bg="white" text="white">
+      <Card.Header className="card-header">Featured Project</Card.Header>
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.desc}</Card.Text>
+      </Card.Body>
+    </Card>
+  )
 }
 
 class Projects extends React.Component {
@@ -17,7 +26,8 @@ class Projects extends React.Component {
         <div className="section-title">Projects</div>
         <div className="section-content">
           <div className="projects-chunk">
-            projects
+
+            
           </div>
         </div>
         

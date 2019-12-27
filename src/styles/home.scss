@@ -1,16 +1,14 @@
 @import "./globals";
 
 .home-main {
-  height: 100vh;
+  height: fit-content;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 2rem;
   padding: 2em;
-  max-width: 90%;
   line-height: 2.5rem;
-  @include tablet {
-    align-items: center;
-  }
+  font-family: $Apercu;
 }
 
 h1,h2,h3,p {
@@ -27,31 +25,10 @@ p {
   font-size: 2.5em;
 }
 
-.underline {
-  padding-bottom: 3.5px;
-  background: linear-gradient(to bottom, var(--mainColor) 0%,
-      var(--mainColor) 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 4px 4px;
-  width: fit-content;
-  text-decoration: none;
-  -webkit-transition: background-size 1500ms ease-in;
-  -moz-transition: background-size 1500 ease-in;
-  -o-transition: background-size 1500 ease-in;
-  -ms-transition: background-size 1500ms ease-in;
-  transition: background-size 1500ms ease-in;
-}
-
-.underline:hover {
-  background-size: 100%;
-}
-
 .description {
   margin-top: 2rem;
   line-height: 2rem;
   width: 65%;
-  
 }
 
 .name {
@@ -64,9 +41,12 @@ p {
     width: 75%;
   }
   .home-main {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
+    .nonlogo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .name {
       font-size: 0.9em;
       display: flex;
@@ -83,15 +63,19 @@ p {
   }
 }
 
-@media only screen and (min-width: 1500px) {
+// min desktop
+@include desktop {
+  
+  line-height: 1.5em;
+  .home-main {
+    margin-top: 8em;
+  }
   .description {
     width: 45%;
-  }
-  p {
-    font-size: 1.25vw;
+    font-size: 1.35em;
   }
   .name {
-    font-size: 5vw;
+    font-size: 1.55em;
   }
 }
 
@@ -123,3 +107,16 @@ p {
   color: var(--mainColor);
 }
 
+.logoName {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4vh;
+  width: 30em;
+  overflow: visible;
+  svg  {
+    display: block;
+  }
+  @include tablet {
+    max-width: 75%;
+  }
+}

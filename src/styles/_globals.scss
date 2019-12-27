@@ -1,4 +1,6 @@
 // Credits to Bchiang7 for design inspiration: https://github.com/bchiang7/bchiang7.github.io/blob/master/_scss/partials/_globals.scss
+@import './fonts.scss';
+
 // Colors
 $night: #171c28;
 $black: #36363c;
@@ -50,7 +52,7 @@ $weird-height: 512px;
 }
 
 @mixin desktop {
-  @media screen and (max-width: #{$desktop-width}) {
+  @media screen and (min-width: #{$desktop-width}) {
     @content;
   }
 }
@@ -99,6 +101,12 @@ $weird-height: 512px;
 
 @mixin weird-height {
   @media screen and (max-height: #{$weird-height}) {
+    @content;
+  }
+}
+
+@mixin min-ld {
+  @media screen and (min-width: #{$tablet-width}) {
     @content;
   }
 }

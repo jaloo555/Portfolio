@@ -1,3 +1,4 @@
+@import './globals';
 :root {
   --mainColor: #ff9800;
   --lightColor: #FFB74D;
@@ -14,6 +15,7 @@
   width: 100%;
   top: 0;
   background-color: rgba(255, 252, 247, 0.7);
+  font-family: $Apercu;
 }
 
 .navbar-brand > .logo  {
@@ -24,6 +26,10 @@
   color: #ffffff;
   background-color: #000000;
   margin-top: 0.5em;
+  margin-left: 3vw;
+  @include tablet {
+    margin-left: 0;
+  }
 }
 
 .navbar-brand > .logo:hover {
@@ -44,8 +50,8 @@
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
-  color: #000;
   text-decoration: none;
+  width: fit-content;
   -webkit-transition: background-size 1500ms ease-in;
   -moz-transition: background-size 1500 ease-in;
   -o-transition: background-size 1500 ease-in;
