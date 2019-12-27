@@ -2,11 +2,15 @@ import React from 'react'
 
 import "../../styles/projects.scss"
 
+const Card = () => {
+  
+}
+
 class Projects extends React.Component {
   constructor(props) {
     super(props)
   }
-  
+
   render() {
     return (
       <section id="projects" className="projects-main projects section">
