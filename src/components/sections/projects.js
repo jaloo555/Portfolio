@@ -12,6 +12,7 @@ const Projects = () => {
             Projects {
               desc
               name
+              url
               tech
             }
           }
@@ -19,7 +20,7 @@ const Projects = () => {
       }
     }
   `)
-  // console.log(data.allDataJson.edges[0].node.Projects);
+  console.log(data.allDataJson.edges[0].node.Projects[0]);
   return (
     <section id="projects" className="projects-main section">
       <div className="section-title">Projects</div>
@@ -28,7 +29,7 @@ const Projects = () => {
           return (
             <div className="project">
               <div className="project-name">
-                <a href="#" target="_blank" className="underline">{edge.name}</a>
+                <a href={edge.url} className="underline">{edge.name}</a>
               </div>
               <p>{edge.desc}</p>
               <div className="project-used">

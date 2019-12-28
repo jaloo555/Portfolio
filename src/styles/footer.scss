@@ -1,0 +1,27 @@
+.contact-footer {
+  display: flex;
+  line-height: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  p {
+    font-size: 0.8em;
+  }
+  .inspiration {
+    margin-top: -1.5em;
+  }
+  .contact02 {
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      transition: transform 0.8s linear;
+      &:hover {
+        color: var(--mainColor);
+        transform: translate(0px, 4px);
+      }
+    }
+  }
+}
+
