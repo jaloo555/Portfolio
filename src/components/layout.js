@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from './header'
-import Head from './head'
+// import Head from './head'
 import Footer from './footer'
 import PropTypes from 'prop-types'
 import Container from 'react-bootstrap/Container'

@@ -36,7 +36,7 @@ class Header extends React.Component {
             <Nav.Link href="#skills" className="links">Skills</Nav.Link>
             <Nav.Link href="#projects" className="links">Projects</Nav.Link>
             <Nav.Link href="#contact" className="links">Contact</Nav.Link>
-            <Nav.Link href="#resume" className="underline">Resume</Nav.Link>
+            <Nav.Link href="./Chen Jason's Resume.pdf" className="underline">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,0 +1,44 @@
+{
+  "Projects": [
+    {
+      "name": "Deep Learning for Mental Health",
+      "url": "https://github.com/jaloo555/Deep-Learning-For-Mental-Health",
+      "desc": "Research examining mental health issues associated with built environment using transfer and ensemble learning",
+      "tech": ["Python", "Keras", "Sklearn", "ML"]
+    },
+    {
+      "name": "Intrusion Detection System",
+      "url": "https://github.com/jaloo555/ids_dl",
+      "desc": "Intrusion detection system using Sparse Autoencoders, K-Means clustering and PCA decomposition",
+      "tech": ["Python", "Keras", "Sklearn",
+        "ML"
+      ]
+    },
+    {
+      "name": "Malicious website classifier",
+      "url": "https://github.com/jaloo555/Classifying-Malicious-and-Benign-Websites",
+      "desc": "Prediction model classifying malicious and benign websites based on application layer and network characteristics.",
+      "tech": ["Python", "Keras", "Sklearn",
+        "ML"
+      ]
+    },
+    {
+      "name": "Gympods",
+      "url": "https://gympods.herokuapp.com/",
+      "desc": "Website for a company co-founded with a friend selling pod-based protein powder",
+      "tech": ["Javascript(ES6+)", "NodeJS", "React", "Next.js"]
+    },
+    {
+      "name": "Sorting visualizer",
+      "url": "https://github.com/jaloo555/algo_visualizer",
+      "desc": "Visualizer for common sorting algorithms",
+      "tech": ["Python", "Dash"]
+    }, 
+    {
+      "name": "Xunlei - Download sniffer",
+      "url": "https://github.com/jaloo555/Xunlei-Extension",
+      "desc": "Safari App extension that sniffers downloadable resources on the page",
+      "tech": ["Javascript(ES6+)", "Swift"]
+    }
+  ]
+}

@@ -8,10 +8,12 @@ import {Zoom, Fade} from 'react-reveal'
 import Skills from "../components/sections/skills"
 import { graphql } from "gatsby"
 import Head from "../components/head"
+import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <>
-    <Head/>
+    <Head />
+    <SEO title="JC"/>
     <Layout>
       <Fade>
         <Home />

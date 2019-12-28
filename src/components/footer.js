@@ -19,7 +19,7 @@ const Footer = () => {
         <a className="mail-link" href="mailto:chisanch@usc.edu">
           <FontAwesomeIcon icon="envelope" />
         </a>
-        <a className="social">
+        <a className="social" href="./Chen Jason's Resume.pdf">
           <FontAwesomeIcon icon={faFirstdraft} />
         </a>
       </div>
