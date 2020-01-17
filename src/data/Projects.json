@@ -36,8 +36,8 @@
     }, 
     {
       "name": "Xunlei - Download sniffer",
-      "url": "https://github.com/jaloo555/Xunlei-Extension",
-      "desc": "Safari App extension that sniffers downloadable resources on the page",
+      "url": "https://chrome.google.com/webstore/detail/mac%E8%BF%85%E9%9B%B7%E4%B8%8B%E8%BD%BD%E6%94%AF%E6%8C%81/bclmkgofhdgekpoamoialodjdloiilod?hl=zh-CN",
+      "desc": "Safari\/Chrome extension with 500,000+ downloads that sniffers downloadable resources on the page",
       "tech": ["Javascript(ES6+)", "Swift"]
     }
   ]
