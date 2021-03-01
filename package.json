@@ -30,7 +30,7 @@
     "react-reveal": "^1.2.2",
     "react-scroll-parallax": "^2.2.0",
     "styled-components": "^4.4.1",
-    "three": "^0.111.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
